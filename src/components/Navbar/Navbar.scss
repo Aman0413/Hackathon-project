@@ -1,0 +1,128 @@
+.Navbar {
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+  .navbar {
+    min-width: 70px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 0 24px;
+    padding-block: 10px;
+    background-color: black;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+
+    .icons-cart {
+      font-size: 2rem;
+    }
+  }
+
+  .nav-branding {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+
+    transition: all ease-in-out 0.3s;
+  }
+  .nav-branding:hover {
+    scale: (1.3);
+  }
+  .nav-link {
+    transition: 0.7s ease;
+  }
+  .nav-link:hover {
+    color: dodgerblue;
+  }
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+  @media screen and (max-width: 767px) {
+    .hamburger {
+      display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      flex-direction: column;
+      backdrop-filter: blur(20px);
+
+      width: 100%;
+      text-align: center;
+      transition: 0.6s;
+      gap: 50px;
+      padding-block: 25px;
+    }
+    .nav-hover {
+      margin: 16px 0;
+    }
+
+    .nav-hover a {
+      color: white;
+      font-weight: bold;
+    }
+    .nav-menu.active {
+      left: 0;
+    }
+  }
+
+  .head {
+    font-size: 4rem;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+  }
+
+  .headBanner p {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .headBanner {
+    width: 50%;
+    height: 50%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 130px;
+  }
+  .myName {
+    color: var(--primary-color);
+  }
+  .btn {
+    color: var(--secodary-color);
+  }
+}

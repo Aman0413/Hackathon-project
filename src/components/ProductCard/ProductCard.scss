@@ -1,0 +1,29 @@
+.ProductCard {
+  transition: all ease-in-out 0.3s;
+  .card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .img {
+      width: 200px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .price {
+      background-color: rgb(255, 251, 245);
+      padding-inline: 10px;
+      padding-block: 10px;
+      h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

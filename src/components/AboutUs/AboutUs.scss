@@ -1,0 +1,53 @@
+.AboutUs {
+  height: 100vh;
+  font-family: "Poppins";
+  .company {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+  }
+
+  .company-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img {
+    width: 500px;
+    margin: 1rem 0rem 0rem 2rem;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  }
+
+  .img img {
+    width: 100%;
+  }
+
+  .company-info {
+    width: 100%;
+    margin-right: 4rem;
+  }
+
+  .company-info span {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .company-info span .our {
+    color: #ffdc0e;
+  }
+
+  .company-info p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .AboutUs {
+    .company {
+      flex-direction: column;
+    }
+  }
+}
